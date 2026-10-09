@@ -1,4 +1,4 @@
-def tp1exo6():
+def exo6():
     minutes = int(input("Entrer les minutes : "))
     jour = None
     heure = None
@@ -10,4 +10,4 @@ def tp1exo6():
         heure += 1
     return (f'on est le {jour} et il est actuellement {heure} : {minutes}')
 
-tp1exo6()
+exo6()

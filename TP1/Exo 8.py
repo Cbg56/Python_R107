@@ -1,4 +1,4 @@
-def tp1exo8():
+def exo8():
     print(randint(0,100))
 
-tp1exo8()
+exo8()
