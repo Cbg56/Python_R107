@@ -1,4 +1,4 @@
-def NbMinutes ():
+def NbMinutes():
     jour = int(input("Entrer les jours : "))
     heure = int(input("Entrer les heures : "))
     minute = int(input("Entrer les minutes : "))
@@ -8,3 +8,5 @@ def NbMinutes ():
     else:
         TtlMinutes = (jour - 1) * 24 * 60 + heure * 60 + minute
     return TtlMinutes
+
+NbMinutes()
