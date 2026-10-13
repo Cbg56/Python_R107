@@ -66,4 +66,4 @@ def pgnb ():
 # facto_add()
 # boucle_attente()
 # verif_inter()
-#pgnb()
+# pgnb()
