@@ -49,10 +49,8 @@ def verif_inter():
 
 def pgnb ():
     N = int(input("Entrer un nombre : "))
-    if N < 0:
+    if N < 1:
         pgnb()
-    elif N == 0:
-        print("0")
     else:
         indx = 0
         Nb = 0
