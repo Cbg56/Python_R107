@@ -17,6 +17,22 @@ def compte_ocu():
         if nb[loop] > max_nb:
             max_lst = lst[loop]
             max_nb = nb[loop]
-    print(f"Il y a {max_nb} fois {max_lst}")
+    print(f"Le nombre le plus fréquent dans la liste est le : {max_lst} ({max_nb} x)")
 
-compte_ocu()
+def compte_counts():
+    L1 = [2, 7, 5, 6, 7, 1, 6, 2, 1, 7, 6]
+    lst = []
+    for i in range(len(L1)):
+        nombre = L1[i]
+        if not nombre in lst:
+            lst.append(nombre)
+    nb = 0
+    ch = None
+    for loop in range(len(lst)):
+        if L1.count(lst[loop]) > nb:
+            ch = lst[loop]
+            nb = L1.count(lst[loop])
+    print(f"Le nombre le plus fréquent dans la liste est le : {ch} ({nb} x)")
+
+#compte_ocu()
+compte_counts()
