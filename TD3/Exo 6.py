@@ -1,17 +1,17 @@
 def velo ():
     debut = int (input ("Donnez l’heure de début de la location (un entier) :"))
     fin = int (input ("Donnez l’heure de fin de la location (un entier) :"))
-    if debut < 0 or debut > 23 or fin < 0 or fin > 23:
+    if debut < 0 or debut > 24 or fin < 0 or fin > 24:
         velo()
     else:
-        if fin < 7 or debut > 16:
+        if fin <= 6 or debut >= 17:
             print(f"Vous avez loué votre vélo pendant \n {fin-debut} heure(s) au tarif horaire de 1.0 euro (s) \n Le montant total à payer est de {fin-debut} euro (s).")
         else:
             prix = 0
             coutant = 0
             peu_coutant = 0
             while debut != fin:
-                if debut == 7 or debut ==8 or debut ==9 or debut ==0 or debut ==11 or debut ==12 or debut ==13 or debut ==14 or debut ==15 or debut ==16 or debut ==17:
+                if debut == 7 or debut ==8 or debut ==9 or debut ==10 or debut ==11 or debut ==12 or debut ==13 or debut ==14 or debut ==15 or debut ==16:
                     prix += 2
                     coutant += 1
                 else:
@@ -24,17 +24,16 @@ def velo ():
 def velo_V2 ():
     debut = int (input ("Quel heure ?"))
     fin = int (input ("Quel fin ?"))
-    if debut < 0 or debut > 23 or fin < 0 or fin > 23:
+    if debut < 0 or debut > 24 or fin < 0 or fin > 24:
         velo()
     else:
         if fin < 7 or debut > 16:
             print(fin-debut)
         else:
-            heure_coutant = [i for i in range (7,18)]
+            heure_coutant = [i for i in range (7,16)]
             coutant = 0
             peu_coutant = 0
-            test = False
-            for a in range(debut, fin+1):
+            for a in range(debut, fin):
                 test = False
                 for b in range(len(heure_coutant)):
                     if debut == heure_coutant[b]:

@@ -1,26 +1,22 @@
 def compte_ocu():
     L1 = [2, 7, 5, 6, 7, 1, 6, 2, 1, 7, 6]
-    dico = {}
-    for i in range(len(L1)):
-        if not L1[i] in dico:
-            dico.append({L1[i]: 1})
-        else:
-            for key in dico:
-                if L1[i] == dico[key]:
-                    dico[i].value += 1
-    max_item = 0
-    max_value = 0
-    for key in dico:
-        if dico[key] > max:
-            max_item = dico[key]
-            max_value = key
-    print(f"Il y a {max_value} fois {max_item}")
-
-#compte_ocu()
-
-def compte_ocu2():
-    L1 = [2, 7, 5, 6, 7, 1, 6, 2, 1, 7, 6]
     lst = []
+    nb = []
     for i in range(len(L1)):
-        if not L1[i] in lst:
-            lst.append(L1[i])
+        nombre = L1[i]
+        if not nombre in lst:
+            lst.append(nombre)
+            nb.append(1)
+        else:
+            for j in range(len(lst)):
+                if nombre == lst[j]:
+                    nb[j] += 1
+    max_lst = 0
+    max_nb = 0
+    for loop in range(len(nb)):
+        if nb[loop] > max_nb:
+            max_lst = lst[loop]
+            max_nb = nb[loop]
+    print(f"Il y a {max_nb} fois {max_lst}")
+
+compte_ocu()
