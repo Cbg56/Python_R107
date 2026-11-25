@@ -7,3 +7,5 @@ def MON_ARGENT():
         print((160*salaire_de_reference) + ((heure - 160)*(1.25*salaire_de_reference)))
     else:
         print((160*salaire_de_reference)+(40*(salaire_de_reference*1.25))+((heure - 200)*(salaire_de_reference*1.5)))
+
+MON_ARGENT()
