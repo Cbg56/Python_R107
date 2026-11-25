@@ -43,6 +43,10 @@ def dico_ensemble():
     dico['name'] = lst_name
     dico['promo'] = lst_pro
     dico['group'] = lst_group
-    print(dico)
+    return(dico)
 
-dico_ensemble()
+def affichage_ensemble():
+    dico = dico_ensemble()
+    for key in dico:
+        print(f"- {key}")
+

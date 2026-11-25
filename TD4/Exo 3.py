@@ -1,5 +1,5 @@
 def scalaire():
-    nMax = 3
+    nMax = 4
     ttl = 0
     lstu = []
     lstd = []

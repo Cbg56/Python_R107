@@ -20,7 +20,7 @@ def compte_ocu():
     print(f"Le nombre le plus fréquent dans la liste est le : {max_lst} ({max_nb} x)")
 
 def compte_counts():
-    L1 = [2, 7, 5, 6, 7, 1, 6, 2, 1, 7, 6]
+    L1 = [2, 55, 7, 55, 36, 7, 21, 56, 55, 3, 7, 6,2, 55, 7, 55, 36, 7, 21, 56, 55, 3, 7, 6,2, 55, 7, 55, 36, 7, 21, 56, 55, 3, 7, 6,2, 55, 7, 55, 36, 7, 21, 56, 55, 3, 7, 6,2, 55, 7, 55, 36, 7, 21, 56, 55, 3, 7]
     lst = []
     for i in range(len(L1)):
         nombre = L1[i]
